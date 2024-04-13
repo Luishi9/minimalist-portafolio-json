@@ -4,7 +4,7 @@
       "label": "Programmer Web",
       "image": "",
       "email": "john@gmail.com",
-      "phone": "(912) 555-4321",
+      "phone": "(+52) 2441567536",
       "url": "https://johndoe.com",
       "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
       "location": {
@@ -103,14 +103,51 @@
       "name": "Jane Doe",
       "reference": "Reference…"
     }],
-    "projects": [{
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "url": "https://project.com/"
-    }]
+    "projects": [
+      
+      {
+        "name": "Project",
+        "isActive": true,
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "description": "Description...",
+        "highlights": [
+          "Won award at AIHacks 2016"
+        ],
+        "url": "https://project.com/"
+      },
+      {
+        "name": "Project",
+        "isActive": true,
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "description": "Description...",
+        "highlights": [
+          "Won award at AIHacks 2016"
+        ],
+        "url": "https://project.com/"
+      },
+      {
+        "name": "Project",
+        "isActive": true,
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "description": "Description...",
+        "highlights": [
+          "Won award at AIHacks 2016"
+        ],
+        "url": "https://project.com/"
+      },
+      {
+        "name": "Project",
+        "isActive": true,
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "description": "Description...",
+        "highlights": [
+          "Won award at AIHacks 2016"
+        ],
+        "url": "https://project.com/"
+      }
+    ]
   }

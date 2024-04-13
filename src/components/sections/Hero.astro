@@ -1,14 +1,14 @@
 ---
-import { basics } from "@cv"
+import { basics } from "@cv";
 
-import Section from "@/components/Section.astro"
-import Mail from "@/icons/Mail.astro"
-import Phone from "@/icons/Phone.astro"
-import GitHub from "@/icons/GitHub.astro"
-import X from "@/icons/X.astro"
-import linkedIn from "@/icons/linkedIn.astro"
-import WorldMap from "@/icons/WorldMap.astro"
-import type { SocialIcon } from "@/types"
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import GitHub from "@/icons/GitHub.astro";
+import X from "@/icons/X.astro";
+import linkedIn from "@/icons/linkedIn.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import type { SocialIcon } from "@/types";
 
 //import { Icon } from "astro/runtime/client/dev-toolbar/ui-library/icons.js";
 
@@ -21,9 +21,11 @@ const SOCIAL_ICONS: Record<string, any> = {
     //X,
 };
 
-function showAlert() {
-    alert("estyo es una alertá");
-}
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
+
+const linkedUrl = linkedInfo?.url;
+
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
@@ -36,7 +38,11 @@ function showAlert() {
                 <WorldMap />
                 {city}, {region}
             </span>
-            <footer>
+            <footer class="print">
+                {printInfo}
+            </footer>
+            <footer class="no-print">
+                <!-- PARA IMPRIMIR -->
                 {
                     email && (
                         <a
@@ -64,20 +70,20 @@ function showAlert() {
                 }
                 {
                     profiles.map(({ network, url, username }) => {
-                      const Icon = SOCIAL_ICONS[network]
-          
-                      return (
-                        <a
-                          href={url}
-                          title={`Visitar el perfil de ${name} en ${network}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Icon />
-                        </a>
-                      )
+                        const Icon = SOCIAL_ICONS[network];
+
+                        return (
+                            <a
+                                href={url}
+                                title={`Visitar el perfil de ${name} en ${network}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Icon />
+                            </a>
+                        );
                     })
-                  }
+                }
             </footer>
         </div>
         <figure>
@@ -87,7 +93,6 @@ function showAlert() {
 </Section>
 
 <style>
-
     .container {
         display: flex;
         flex-direction: row;
@@ -96,25 +101,25 @@ function showAlert() {
         gap: 1rem;
     }
 
-    .info{
+    .info {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         padding-right: 32px;
     }
 
-    h1{
+    h1 {
         font-size: 2rem;
     }
 
-    h2{
+    h2 {
         color: #444;
         font-weight: 550;
         font-size: 1.1rem;
         text-wrap: balance;
     }
 
-    img{
+    img {
         aspect-ratio: 1 / 1;
         object-fit: cover;
         width: 128px;
@@ -122,7 +127,7 @@ function showAlert() {
     }
 
     span {
-        color:#666;
+        color: #666;
         display: flex;
         align-items: center;
         gap: 0.45rem;
@@ -147,12 +152,26 @@ function showAlert() {
         width: 42px;
         margin-right: 5px;
         border-radius: 7px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
     }
 
     footer a:hover {
         background: #c0c0c0;
     }
 
+    @media print {
+        .no-print {
+            display: none;
+        }
+    }
 
+    .print {
+        display: none;
+    }
+
+    @media print {
+        .print {
+            display: block;
+        }
+    }
 </style>
