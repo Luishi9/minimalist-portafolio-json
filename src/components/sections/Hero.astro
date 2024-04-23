@@ -5,10 +5,8 @@ import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
 import GitHub from "@/icons/GitHub.astro";
-import X from "@/icons/X.astro";
 import linkedIn from "@/icons/linkedIn.astro";
 import WorldMap from "@/icons/WorldMap.astro";
-import type { SocialIcon } from "@/types";
 
 //import { Icon } from "astro/runtime/client/dev-toolbar/ui-library/icons.js";
 
@@ -77,7 +75,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
                         return (
                             <a
                                 href={url}
-                                title={`Visitar el perfil de ${name} en ${network}`}
+                                title={`Visitar el perfil de ${username} en ${network}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
