@@ -1,12 +1,12 @@
 {
     "basics": {
       "name": "Luis Eduardo Cruz Rubin",
-      "label": "Programmer Web",
+      "label": "Programador Web",
       "image": "https://tenor.com/DUpWUliPhU.gif",
       "email": "luisrubin977@gmail.com",
       "phone": "(+52) 2441567536",
       "url": "https://johndoe.com",
-      "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+      "summary": "Programador web Junior con experiencia en desarrollo de aplicaciones web, con conocimientos en tecnologias como HTML, CSS, JavaScript, Node, MySQL, GitHub. Motivado y con ganas de seguir aprendiendo y creciendo en el mundo de la programación.",
       "location": {
         "address": "2712 Broadway St",
         "postalCode": "CA 94115",
@@ -28,13 +28,13 @@
     },
     "work": [{
       "name": "DOCUPUBELA",
-      "position": "TRANSFORMACION DIGITAL",
+      "position": "Programador en el área de Transformación Digital.",
       "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Programador web…",
+      "startDate": "2023-01-09",
+      "endDate": "2025-01-03",
+      "summary": "Programador web Junior, Full Stack",
       "highlights": [
-        "Started the company"
+        "Desarrolle y actualice módulos de la aplicación web de manejo de inventario y punto de venta principal de la empresa, desarrolle una aplicación web en de donde se tendría el control y asignarían clientes al personal de ventas,  desarrolle la pagina de bienvenida de la aplicación de punto de venta con el fin de que los clientes tuvieran información de lo que puede hacer con esta."
       ]
     }],
     "volunteer": [{
@@ -57,7 +57,7 @@
       "endDate": "2023-09-01",
       "score": "4.0",
       "courses": [
-        "DB1101 - Basic SQL"
+        "Curse mi carrera en ingeniería en tecnologías de la información, en la que nos enseñaron la programación orientada a objetos, modelado de procesos, administración de proyectos, metodología ágil como SCRUM, el manejo de bases de datos, programación web básica."
       ]
     }],
     "awards": [{
@@ -79,15 +79,45 @@
       "url": "https://publication.com",
       "summary": "Description…"
     }],
-    "skills": [{
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
-    }],
+    "skills": [
+      {
+        "name": "HTML5",
+        "level": "Master"
+      },
+      {
+        "name": "CSS",
+        "level": "Master"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Master"
+      },
+      {
+        "name": "PHP",
+        "level": "Master"
+      },
+      {
+        "name": "SQL",
+        "level": "Master"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Master"
+      },
+      {
+        "name": "PHP con MySQL",
+        "level": "Master"
+      },
+      {
+        "name": "Node.js (básico)",
+        "level": "Master"
+      },
+      {
+        "name": "Consumo de APIs (básico)",
+        "level": "Master"
+      }
+
+    ],
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"
