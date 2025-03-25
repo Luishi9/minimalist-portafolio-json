@@ -119,7 +119,7 @@
 
     ],
     "languages": [{
-      "language": "English",
+      "language": "Español",
       "fluency": "Native speaker"
     }],
     "interests": [{
@@ -136,26 +136,15 @@
     "projects": [
       
       {
-        "name": "Project",
+        "name": "Catalogo de productos",
         "isActive": true,
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "description": "Description...",
+        "startDate": "2024-01-01",
+        "endDate": "2024-01-01",
+        "description": "Catalogo de productos con un diseño minimalista, con la finalidad de que el usuario pueda ver los productos que se ofrecen en la tienda.",
         "highlights": [
-          "Won award at AIHacks 2016"
+          "De las primeras aplicaciones que desarrolle en Astro"
         ],
-        "url": "https://project.com/"
-      },
-      {
-        "name": "Project",
-        "isActive": true,
-        "startDate": "2019-01-01",
-        "endDate": "2021-01-01",
-        "description": "Description...",
-        "highlights": [
-          "Won award at AIHacks 2016"
-        ],
-        "url": "https://project.com/"
+        "url": "https://plp-catalogo-productos.netlify.app/"
       },
       {
         "name": "Project",
